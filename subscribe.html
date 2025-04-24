@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Chou</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/subscribe.css">
+    <script>
+        function subscribe() {
+            alert("订阅成功！");
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <div>
+            <ul>
+                <li><a href='index.html'><span>主页</span></a></li>
+                <li><a href='./introduce.html'><span>个人介绍</span></a></li>
+                <li><a href='#'><span>专辑推荐 ▼</span></a>
+                    <ul>
+                        <li><a href="./album1.html"><span>七里香</span></a> </li>
+                        <li><a href="./album2.html"><span>叶惠美</span></a></li>
+                        <li><a href="./album3.html"><span>11月的肖邦</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="./about.html"><span>关于</span></a></li>
+                <li><a href="./subscribe.html"><span>订阅</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--表单-->
+    <div class="container">
+        <form class="subscribe-form">
+            <h2>欢迎加入JM！</h2>
+            <label for="name">用户名：</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit" onclick="subscribe()">订阅</button>
+        </form>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="per-info">
+                <p>姓名：岑志博</p>
+                <p>学号：202226204056</p>
+                <p>Email：3434479776@qq.com</p>
+            </div>
+            <div class="sch-info">
+                <p>学校：江西师范大学</p>
+                <p>学院：计算机信息工程学院</p>
+                <p>班级：人工智能1班</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 江西师范大学. DT Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

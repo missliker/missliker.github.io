@@ -1,1 +1,117 @@
-<h1>欢迎来到missliker的主页！</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Chou</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <div>
+            <ul>
+                <li><a href='index.html'><span>主页</span></a></li>
+                <li><a href='./introduce.html'><span>个人介绍</span></a></li>
+                <li><a href='#'><span>专辑推荐 ▼</span></a>
+                    <ul>
+                        <li><a href="./album1.html"><span>七里香</span></a> </li>
+                        <li><a href="./album2.html"><span>叶惠美</span></a></li>
+                        <li><a href="./album3.html"><span>11月的肖邦</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="./about.html"><span>关于</span></a></li>
+                <li><a href="./subscribe.html"><span>订阅</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <div class="slide">
+        <div class="mySlides fade">
+            <a href="./introduce.html"><img src="./images/JayChou.png" style="width:40%"></a>
+        </div>
+        <div class="mySlides fade">
+            <a href="./album1.html"><img src="./images/zhuanji1.JPG" style="width:40%"></a>
+        </div>
+        <div class="mySlides fade">
+            <a href="./album2.html"><img src="./images/zhuanji2.JPG" style="width:40%"></a>
+        </div>
+        <div class="mySlides fade">
+            <a href="./album3.html"><img src="./images/zhuanji3.JPG" style="width:40%"></a>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!-- 分割线 -->
+    <div class="separator"></div>
+
+    <!-- 板块简介 -->
+    <div class="article-container">
+        <div class="article-card">
+            <a href="./introduce.html">
+                <img src="./images/JayChou.png">
+                <h3>个人介绍</h3>
+                <p>“哎呦，不错呦”</p>
+            </a>
+        </div>
+        <div class="article-card">
+            <a href="./album1.html">
+                <img src="./images/zhuanji1.JPG">
+                <h3>七里香</h3>
+                <p>中国风味的诗意情歌</p>
+            </a>
+        </div>
+        <div class="article-card">
+            <a href="./album2.html">
+                <img src="./images/zhuanji2.JPG">
+                <h3>叶惠美</h3>
+                <p>元素最丰富，情感最激昂</p>
+            </a>
+        </div>
+        <div class="article-card">
+            <a href="./album3.html">
+                <img src="./images/zhuanji3.JPG">
+                <h3>11月的肖邦</h3>
+                <p>低调中的华丽，复古中的新潮</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="per-info">
+                <p>姓名：岑志博</p>
+                <p>学号：202226204056</p>
+                <p>Email：3434479776@qq.com</p>
+            </div>
+            <div class="sch-info">
+                <p>学校：江西师范大学</p>
+                <p>学院：计算机信息工程学院</p>
+                <p>班级：人工智能1班</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 江西师范大学. DT Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+
+</body>
+
+</html>
